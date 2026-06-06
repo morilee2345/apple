@@ -1,9 +1,10 @@
 import React from 'react';
+import { SectionTransition } from './SectionTransition';
 
 export const SlidesPart3 = () => (
   <>
     <section id="slide-18" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative z-10">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative z-10">
         <div>
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">17. INDUSTRIAL MORPHOLOGY</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">产品外观的一体化纯粹切面</h2>
@@ -19,14 +20,14 @@ export const SlidesPart3 = () => (
             <img src="https://i.postimg.cc/KjDGHS8Y/yuan-jiao-bi-li-hai-shi-dao-shu-xue-ti-1-zi-chuanone-hao-lai-zi-xiao-hong-shu-wang-ye-ban.png" alt="Precision Chassis Schematic" className="w-full h-auto object-contain rounded-xl" />
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-19" className="snap-section px-6 md:px-16 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" alt="Titanium Texture Abstract" className="w-full h-full object-cover" />
       </div>
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">18. DESIGN TEXTURES & MANUFACTURING CRAFT</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">材料自证语言：铝合金、硬质玻璃与钛金属</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -61,11 +62,11 @@ export const SlidesPart3 = () => (
             </div>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-20" className="snap-section px-6 md:px-16 relative overflow-hidden">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">19. THE PACKAGING RITUALISM</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">开箱仪式感：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">气压阻尼下降与无塑绿色秩序</span></h2>
@@ -79,18 +80,18 @@ export const SlidesPart3 = () => (
         <div className="liquid-glass p-4 rounded-3xl relative min-h-[320px] flex flex-col justify-between overflow-hidden">
           <span className="text-[9px] font-mono text-apple-silver tracking-widest uppercase mb-4 block">PACKAGING RITUAL SCHEMATIC</span>
           <div className="my-auto rounded-xl overflow-hidden border border-white/10 bg-zinc-950 flex items-center justify-center h-48">
-            <img src="https://i.postimg.cc/wjVWj5QB/Chat-GPT-Image-2026nian6yue6ri-11-08-01.png" alt="Packaging Damping Schematic" className="w-full h-full object-cover object-center opacity-85" />
+            <img src="https://i.postimg.cc/Dz41ZZmk/Chat-GPT-Image-2026nian6yue6ri-16-50-59.png" alt="Packaging Damping Schematic" className="w-full h-full object-cover object-center opacity-85" />
           </div>
           <div className="flex justify-between text-[9px] font-mono text-apple-silver border-t border-white/5 pt-4 mt-4">
             <span>PULL-TAB: RECYCLABLE PAPER ONLY</span>
             <span>DESCENT AIR DAMPING: ~3.2S</span>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-21" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">20. DESIGN CASE STUDY</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">经典案例解构：全系产品设计语言变迁</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -127,11 +128,11 @@ export const SlidesPart3 = () => (
             <p className="text-[11px] text-apple-silver leading-relaxed">利用全维曲面玻璃融合精密散热系统. 将物理现实空间完全置入无界高精计算界面的奇点。</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-22" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative z-10">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-start relative z-10">
         <div>
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">21. COGNITIVE SYNCHRONICITY</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">生态连贯性：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">跨屏幕、跨场景的视觉连贯性</span></h2>
@@ -143,13 +144,13 @@ export const SlidesPart3 = () => (
           </p>
         </div>
         <div className="liquid-glass rounded-3xl overflow-hidden w-full max-w-lg p-2">
-          <img src="https://i.postimg.cc/Y91Mvynp/Chat-GPT-Image-2026nian6yue6ri-11-03-02.png" alt="跨设备、多终端生态连贯性交互分析图" className="w-full h-auto object-contain block rounded-2xl" />
+          <img src="https://i.postimg.cc/KvPV1pXg/Chat-GPT-Image-2026nian6yue6ri-11-03-02.png" alt="跨设备、多终端生态连贯性交互分析图" className="w-full h-auto object-contain block rounded-2xl" />
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-23" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">22. ADVERTISING STRATEGY & NARRATIVE</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">营销美学：高情绪、极致特写与留白叙事</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -173,11 +174,11 @@ export const SlidesPart3 = () => (
             </div>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-24" className="snap-section px-6 md:px-16 relative overflow-hidden">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">23. SPATIAL ARCHITECTURE EXEGESIS</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">Apple Store：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">无缝实体物理神庙的空间可读性</span></h2>
@@ -188,34 +189,15 @@ export const SlidesPart3 = () => (
             巨幅、无框的落地超精钢化玻璃幕墙打破了建筑室内与外界街道的物理和心理边界。店内，原装进口橡木展示台、无瑕疵的白色水磨石地板 and 均匀顶置漫反射柔光系统，都在延续着苹果产品和包装一脉相承 of 对齐秩序。
           </p>
         </div>
-        <div className="liquid-glass-strong p-6 rounded-3xl relative min-h-[320px] flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-1/2 h-56 rounded-lg overflow-hidden">
-            <img src="https://i.postimg.cc/Qdb6dgJC/Chat-GPT-Image-2026nian6vue6ri-11-05-40.png" alt="Apple Store Architecture Shanghai" className="w-full h-full object-cover object-center" />
-          </div>
-          <div className="w-full md:w-1/2 flex flex-col justify-between">
-            <span className="text-[9px] font-mono text-apple-silver uppercase">SPATIAL ORDER INDEX ARCHIVE</span>
-            <div className="my-auto space-y-2 font-light text-xs text-apple-silver">
-              <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-                <span>幕墙玻璃</span>
-                <span className="text-white text-[11px]">超白落地双层浮法夹胶</span>
-              </div>
-              <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-                <span>展台板材</span>
-                <span className="text-white text-[11px]">欧洲定制直纹拼接橡木</span>
-              </div>
-              <div className="flex justify-between items-center py-1.5 border-b border-white/5">
-                <span>对齐控制</span>
-                <span className="text-white text-[11px]">全局接缝公差 ±1mm</span>
-              </div>
-            </div>
-          </div>
+        <div className="liquid-glass-strong p-2 rounded-3xl relative min-h-[320px] h-[320px] md:h-[400px]">
+          <img src="https://i.postimg.cc/Qdb6dgJC/Chat-GPT-Image-2026nian6vue6ri-11-05-40.png" alt="Apple Store Architecture Shanghai" className="w-full h-full object-cover object-center rounded-[20px]" />
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-25" className="snap-section px-6 md:px-16 relative overflow-hidden">
       <div className="absolute inset-0 ambient-glow-warm"></div>
-      <div className="max-w-4xl w-full text-center relative z-10 pt-12">
+      <SectionTransition className="max-w-4xl w-full text-center relative z-10 pt-12">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">24. THE THOUGHT PROCESS CLOSURE</span>
         <h2 className="font-heading text-5xl md:text-7xl italic leading-tight mb-8">无形之形，大音希声：<br/><span className="not-italic text-2xl md:text-4xl font-light text-transparent bg-clip-text bg-gradient-to-r from-neutral-300 via-white to-neutral-400">苹果设计范式的启示与学术思考</span></h2>
         <div className="w-24 h-[1px] bg-white/40 mx-auto mb-8"></div>
@@ -226,7 +208,7 @@ export const SlidesPart3 = () => (
           <span className="px-3 py-1.5 border border-white/10 rounded-full bg-black/40 backdrop-blur-sm">研究汇报：完毕</span>
           <span className="px-3 py-1.5 border border-white/10 rounded-full bg-black/40 backdrop-blur-sm">感谢聆听与答辩 / THANK YOU</span>
         </div>
-      </div>
+      </SectionTransition>
     </section>
   </>
 );

@@ -1,9 +1,10 @@
 import React from 'react';
+import { SectionTransition } from './SectionTransition';
 
 export const SlidesPart1 = () => (
   <>
     <section id="slide-2" className="snap-section px-6 md:px-16 relative overflow-hidden">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 items-stretch">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 items-stretch">
         <div className="flex flex-col justify-between py-12">
           <div>
             <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">01. BRAND PROFILE</span>
@@ -19,11 +20,11 @@ export const SlidesPart1 = () => (
         <div className="liquid-glass-strong relative overflow-hidden rounded-2xl h-[400px] md:h-full">
           <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=1200&q=80" alt="Minimalist Workspace" className="w-full h-full object-cover" />
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-3" className="snap-section px-6 md:px-16 relative overflow-hidden">
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">02. EVOLUTION PATHWAY</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">麦金塔到生态宇宙的<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">视觉史实变迁</span></h2>
         
@@ -61,11 +62,11 @@ export const SlidesPart1 = () => (
             <p className="text-[11px] text-apple-silver leading-relaxed">将二维平面视觉体系拓展至无界三维物理空间，光影折射与漫反射成全新语言。</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-4" className="snap-section px-6 md:px-16 relative overflow-hidden">
-      <div className="max-w-4xl w-full text-center relative z-10">
+      <SectionTransition className="max-w-4xl w-full text-center relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">03. CORE BRAND ETHOS</span>
         <h2 className="font-heading text-5xl md:text-7xl italic leading-tight mb-8">“Think Different”<br/><span className="not-italic text-3xl md:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-white">反叛者与拓荒者的精神底蕴</span></h2>
         <div className="w-24 h-[1px] bg-white/40 mx-auto mb-8"></div>
@@ -75,11 +76,11 @@ export const SlidesPart1 = () => (
         <div className="inline-block px-4 py-2 border border-white/10 rounded-full text-xs text-apple-silver font-mono bg-black/40 backdrop-blur-sm">
           以非同凡想为纲，构建特立独行的视觉壁垒
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-5" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">04. VISUAL PARADIGMS</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">品牌视觉核：五个极境维度</h2>
         <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
@@ -109,11 +110,11 @@ export const SlidesPart1 = () => (
             <p className="text-xs text-apple-silver leading-relaxed">微弱的折射渐变和中性极深色彩，带来如黑洞般的优雅凝练深度。</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-6" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+      <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div>
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">05. BRAND POSITIONING</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">高端智能技术与<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">美学先锋艺术的锚点</span></h2>
@@ -129,11 +130,11 @@ export const SlidesPart1 = () => (
             <p className="text-xs text-white">科技与人文交汇的美学中和点</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-7" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-6xl w-full relative z-10">
+      <SectionTransition className="max-w-6xl w-full relative z-10">
         <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">06. THE TARGETED AUDIENCE</span>
         <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">审美型、创造型与效率型<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">社群的情感共振</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,11 +154,11 @@ export const SlidesPart1 = () => (
             <p className="text-sm text-apple-silver leading-relaxed">崇尚极简工作流。跨设备秒级接力、全局一致性排版 and 直觉操作，用极致的设计逻辑消弥等待阻尼。</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
 
     <section id="slide-8" className="snap-section px-6 md:px-16 relative">
-      <div className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+      <SectionTransition className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
         <div className="lg:col-span-5">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">07. DESIGN ARCHITECTURE</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">少，但是更好<br/><span className="not-italic text-2xl md:text-4xl font-light text-transparent bg-clip-text bg-gradient-to-b from-white to-apple-silver">包豪斯到拉姆斯的设计传承</span></h2>
@@ -182,7 +183,7 @@ export const SlidesPart1 = () => (
             <p className="text-sm text-apple-silver font-light"><strong className="text-white">永恒的材质：</strong> 利用最接近地壳质感、最硬核的材料，去抵抗时间的折损，使其设计不仅是当时的先锋，更是未来的考古艺术品。</p>
           </div>
         </div>
-      </div>
+      </SectionTransition>
     </section>
   </>
 );

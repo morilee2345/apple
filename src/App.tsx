@@ -18,9 +18,41 @@ export default function App() {
   const [aiInput, setAiInput] = useState('');
   const [aiResponse, setAiResponse] = useState('');
   const [isAiLoading, setIsAiLoading] = useState(false);
+  const [loadProgress, setLoadProgress] = useState(0);
+  const [isLoadVisible, setIsLoadVisible] = useState(false);
+  const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
   const snapContainerRef = useRef<HTMLElement>(null);
   const slideIds = Array.from({ length: 25 }, (_, i) => `slide-${i + 1}`);
+
+  useEffect(() => {
+    const handleGlobalClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (target.tagName.toLowerCase() === 'img') {
+        const img = target as HTMLImageElement;
+        setZoomedImage(img.src);
+      }
+    };
+    document.addEventListener('click', handleGlobalClick);
+    return () => document.removeEventListener('click', handleGlobalClick);
+  }, []);
+
+  useEffect(() => {
+    const triggerLoad = () => {
+      setIsLoadVisible(true);
+      setLoadProgress(30);
+      setTimeout(() => setLoadProgress(75), 200);
+      setTimeout(() => {
+        setLoadProgress(100);
+        setTimeout(() => {
+          setIsLoadVisible(false);
+          setTimeout(() => setLoadProgress(0), 400);
+        }, 300);
+      }, 600);
+    };
+    
+    triggerLoad();
+  }, [activeSlide]);
 
   const chapters = [
     { label: "01/INTRO", range: [0, 4] },
@@ -118,11 +150,17 @@ export default function App() {
 
   return (
     <div className="relative font-body">
+      {/* Top Loading Progress Bar */}
+      <div 
+        className="fixed top-0 left-0 h-[2px] bg-white z-[120] transition-all duration-300 ease-out shadow-[0_0_15px_rgba(255,255,255,1)]" 
+        style={{ width: `${loadProgress}%`, opacity: isLoadVisible ? 1 : 0 }}
+      />
+      
       <div className={`fixed inset-0 grid-overlay z-40 transition-opacity duration-500 pointer-events-none ${isGridActive ? 'opacity-100' : 'opacity-0'}`}></div>
 
       <div 
-        className="fixed inset-0 z-0 pointer-events-none transition-opacity duration-1000 ease-in-out"
-        style={{ opacity: activeSlide > 0 ? 0.35 : 0 }}
+        className="fixed inset-0 z-0 pointer-events-none"
+        style={{ opacity: 0.35 }}
       >
         <FadingVideo 
           src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260418_080021_d598092b-c4c2-4e53-8e46-94cf9064cd50.mp4"
@@ -196,6 +234,25 @@ export default function App() {
             )}
           </div>
         </div>
+      </div>
+
+      {/* Zoomed Image Viewer Modal */}
+      <div 
+        className={`fixed inset-0 z-[110] flex items-center justify-center transition-all duration-300 ${zoomedImage ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+      >
+        <div 
+          className="absolute inset-0 bg-black/95 backdrop-blur-3xl cursor-zoom-out"
+          onClick={() => setZoomedImage(null)}
+        />
+        {zoomedImage && (
+          <div className="relative z-10 w-full h-full p-4 md:p-12 flex items-center justify-center cursor-zoom-out" onClick={() => setZoomedImage(null)}>
+            <img 
+              src={zoomedImage} 
+              alt="Zoomed view" 
+              className="max-w-full max-h-full object-contain rounded-xl shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-transform duration-500 scale-100 animate-in fade-in zoom-in-95" 
+            />
+          </div>
+        )}
       </div>
 
       <header className="fixed top-0 left-0 w-full z-50 liquid-glass border-b border-white/5 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300">

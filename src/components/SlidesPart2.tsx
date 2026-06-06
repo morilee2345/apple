@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SectionTransition } from './SectionTransition';
 
 export const SlidesPart2 = () => {
   const [goldenOverlay, setGoldenOverlay] = useState(false);
@@ -21,7 +22,7 @@ export const SlidesPart2 = () => {
   return (
     <>
       <section id="slide-9" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">08. SYNCHRONIZED ECOSYSTEM</span>
             <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">软硬一体化的<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">绝对视觉一致性</span></h2>
@@ -32,11 +33,11 @@ export const SlidesPart2 = () => {
           <div className="liquid-glass-strong p-0 rounded-2xl relative overflow-hidden flex flex-col md:flex-row gap-0 h-[300px]">
             <img src="https://i.postimg.cc/fT7XtpwM/Chat-GPT-Image-2026nian6yue6ri-16-40-23.png" alt="Seamless Apple Devices Integration" className="w-full h-full object-cover object-center" />
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-10" className="snap-section px-6 md:px-16 relative overflow-hidden">
-        <div className="max-w-4xl w-full text-center relative z-10">
+        <SectionTransition className="max-w-4xl w-full text-center relative z-10">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">09. EMOTIONAL FREQUENCY</span>
           <h2 className="font-heading text-5xl md:text-7xl italic leading-tight mb-8">情绪管理：<br/><span className="not-italic text-3xl md:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 via-white to-neutral-400">冷静、专业、纯净、前沿</span></h2>
           <div className="w-24 h-[1px] bg-white/40 mx-auto mb-8"></div>
@@ -48,11 +49,11 @@ export const SlidesPart2 = () => {
             <span className="px-4 py-2 border border-white/5 bg-white/[0.02] rounded-full text-xs text-apple-silver">专业：精细视网膜字体级配</span>
             <span className="px-4 py-2 border border-white/5 bg-white/[0.02] rounded-full text-xs text-apple-silver">前沿：极窄金属与玻璃边界</span>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-11" className="snap-section px-6 md:px-16 relative overflow-hidden">
-        <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">10. LOGO GEOMETRIC SYNTHESIS</span>
             <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">完美曲线：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">苹果标志的黄金分割解构</span></h2>
@@ -125,11 +126,11 @@ export const SlidesPart2 = () => {
               </p>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-12" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full relative z-10">
+        <SectionTransition className="max-w-6xl w-full relative z-10">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">11. CHROMATIC REGIMEN — PRIMARY</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">黑、白、银灰的物理介质质感</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -167,11 +168,11 @@ export const SlidesPart2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-13" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full relative z-10">
+        <SectionTransition className="max-w-6xl w-full relative z-10">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">12. CHROMATIC REGIMEN — SECONDARY</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">色彩克制：系统逻辑与数字微彩色</h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -200,11 +201,11 @@ export const SlidesPart2 = () => {
               <p className="text-[11px] text-apple-silver leading-relaxed">用于低碳排印章及环境白皮书标识。代表苹果完全由可再生材料重塑未来的庄重承诺。</p>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-14" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">13. SYSTEM TYPOGRAPHY</span>
             <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">San Francisco：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">数字界面的动态可读性秩序</span></h2>
@@ -259,11 +260,11 @@ export const SlidesPart2 = () => {
               </p>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-15" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full relative z-10">
+        <SectionTransition className="max-w-6xl w-full relative z-10">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">14. COMPOSITIONAL MATRIX</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">大留白、网格系统与信息层级</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -279,11 +280,11 @@ export const SlidesPart2 = () => {
               <img src="https://i.postimg.cc/Sxc19SRG/Chat-GPT-Image-2026nian6yue6ri-10-18-02.png" alt="Grid System Map" className="w-full h-auto object-contain rounded-xl" />
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-16" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <SectionTransition className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
           <div>
             <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">15. THE MATHEMATICS OF CURVES</span>
             <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-6">超椭圆几何：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">曲率连续与倒角美学</span></h2>
@@ -321,11 +322,11 @@ export const SlidesPart2 = () => {
               </div>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
 
       <section id="slide-17" className="snap-section px-6 md:px-16 relative">
-        <div className="max-w-6xl w-full relative z-10">
+        <SectionTransition className="max-w-6xl w-full relative z-10">
           <span className="text-xs font-mono text-apple-silver tracking-widest block mb-4">16. AUXILIARY GRAPHICAL SYMBOLS</span>
           <h2 className="font-heading text-4xl md:text-6xl italic leading-tight mb-12">辅助图形体系：<br/><span className="not-italic text-3xl md:text-4xl font-light text-white">流动微光斑与纯粹刻度网格</span></h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -352,7 +353,7 @@ export const SlidesPart2 = () => {
             <div className="p-8 border border-white/5 rounded-2xl bg-gradient-to-br from-white/[0.02] via-transparent to-transparent flex flex-col justify-between h-96 backdrop-blur-sm">
               <div>
                 <div className="h-28 rounded-lg overflow-hidden border border-white/5 bg-zinc-950 mb-6 flex items-center justify-center">
-                  <img src="https://i.postimg.cc/BQ2QjFTM/i-OS26man-xue-ban-ye-tai-bo-li-1-Ealen-lai-zi-xiao-hong-shu-wang-ye-ban.jpg" alt="Glassmorphic Shell" className="w-full h-full object-cover object-center opacity-85" />
+                  <img src="https://i.postimg.cc/vHxqJQtT/Chat-GPT-Image-2026nian6yue6ri-16-46-57.png" alt="Glassmorphic Shell" className="w-full h-full object-cover object-center opacity-85" />
                 </div>
                 <h3 className="text-lg font-medium text-white mb-3">界面拟态物理卡 (Glassmorphic Shell)</h3>
                 <p className="text-xs text-apple-silver leading-relaxed">对物理真实玻璃透射、漫反射、高亮边缘的超高水准数字还原，让虚拟界面宛若飘浮在发光背板上的精细物理透镜。</p>
@@ -360,7 +361,7 @@ export const SlidesPart2 = () => {
               <span className="text-[10px] font-mono text-apple-silver">USE: OS / WEB PLATFORMS</span>
             </div>
           </div>
-        </div>
+        </SectionTransition>
       </section>
     </>
   );

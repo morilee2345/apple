@@ -138,3 +138,12 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.snap-container img {
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.snap-container img:hover {
+  transform: scale(1.02);
+}

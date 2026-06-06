@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { SectionTransition } from './SectionTransition';
 
 export const Slide1 = ({ activeSlide }: { activeSlide: number }) => {
   const heroVideoRef = useRef<HTMLVideoElement>(null);
@@ -75,7 +76,7 @@ export const Slide1 = ({ activeSlide }: { activeSlide: number }) => {
       </div>
 
       <div className="absolute inset-0 ambient-glow-blue"></div>
-      <div className="max-w-6xl w-full text-center relative z-10 pt-12">
+      <SectionTransition className="max-w-6xl w-full text-center relative z-10 pt-12">
         <span className="text-xs md:text-sm font-semibold tracking-[0.4em] text-apple-silver uppercase block mb-6">DESIGN METHODOLOGY & RESEARCH</span>
         <h1 className="font-heading text-5xl md:text-8xl italic tracking-tight leading-none mb-8 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-neutral-400">
           Apple 品牌视觉形象<br/><span className="not-italic font-light text-4xl md:text-6xl">与设计范式研究</span>
@@ -100,7 +101,7 @@ export const Slide1 = ({ activeSlide }: { activeSlide: number }) => {
             <span className="text-sm font-light text-white">VI / 空间形态 / 交互几何</span>
           </div>
         </div>
-      </div>
+      </SectionTransition>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce flex flex-col items-center">
         <span className="text-[8px] tracking-[0.2em] font-mono text-apple-silver mb-2">SCROLL DOWN</span>
         <div className="w-[1px] h-6 bg-white/20"></div>
